@@ -376,6 +376,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -970,7 +971,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "time"
   }, [_vm._v(_vm._s(_vm.dateTimeFormatter(Date.parse(new Date(_vm.event.date)), _vm.i18n[_vm.locale].fullFormat)))]), _vm._v(" "), _c('p', {
     staticClass: "desc"
-  }, [_vm._v(_vm._s(_vm.event.desc))]), _vm._v(" "), (_vm.event.startsAt != null) ? _c('h2', [_vm._v(_vm._s(_vm.getTime()))]) : _vm._e(), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.event.project))])])
+  }, [_vm._v(_vm._s(_vm.event.desc))]), _vm._v(" "), (_vm.event.time != null) ? _c('h2', [_vm._v(_vm._s(_vm.getTime()))]) : _vm._e(), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.event.project))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.event.place))])])
 },staticRenderFns: []}
 
 /***/ }),

@@ -3,8 +3,9 @@
     <h3 class="title">{{index+1}}. {{event.title}}</h3>
     <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p>
     <p class="desc">{{event.desc}}</p>
-    <h2 v-if="event.startsAt != null">{{getTime()}}</h2>
+    <h2 v-if="event.time != null">{{getTime()}}</h2>
     <p>{{event.project}}</p>
+    <p>{{event.place}}</p>
   </div>
 </template>
 <script>

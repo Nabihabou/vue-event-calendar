@@ -3,6 +3,8 @@
     <h3 class="title">{{index+1}}. {{event.title}}</h3>
     <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p>
     <p class="desc">{{event.desc}}</p>
+    <h2 v-if="event.startsAt != null">{{getTime()}}</h2>
+    <p>{{event.project}}</p>
   </div>
 </template>
 <script>
@@ -29,7 +31,10 @@ export default {
     }
   },
   methods: {
-    dateTimeFormatter
-  }
+    dateTimeFormatter,
+    getTime() {
+      return this.event.startsAt.getHours() + ':' + ('0' + this.event.startsAt.getMinutes()).slice(-2)
+    }
+  },
 }
 </script>

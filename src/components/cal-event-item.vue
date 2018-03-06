@@ -6,15 +6,18 @@
     <h2 v-if="event.time != null">{{event.time}}</h2>
     <p>{{event.project}}</p>
     <p>{{event.place}}</p>
+    <button type="button" @click="sendInfoToDelete()">DELETE</button>
   </div>
 </template>
 <script>
 import i18n from '../i18n.js'
 import { dateTimeFormatter } from '../tools.js'
+import axios from 'axios'
+
 export default {
   data () {
     return {
-      i18n
+      i18n,
     }
   },
   props: {
@@ -33,9 +36,9 @@ export default {
   },
   methods: {
     dateTimeFormatter,
-    // getTime() {
-    //   return this.event.startsAt.getHours() + ':' + ('0' + this.event.startsAt.getMinutes()).slice(-2)
-    // }
+    sendInfoToDelete() {
+      this.$events.fire('delete-event', this.event)
+    },
   },
 }
 </script>

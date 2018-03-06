@@ -6,7 +6,7 @@
     <div class="cal-events">
       <slot>
         <div v-for="(event, index) in events" class="event-item">
-          <cal-event-item :event="event" :index="index" :locale="locale"></cal-event-item>
+          <cal-event-item @test="test()" :event="event" :index="index" :locale="locale"></cal-event-item>
         </div>
       </slot>
     </div>
@@ -66,7 +66,10 @@ export default {
     }
   },
   methods: {
-    dateTimeFormatter
+    dateTimeFormatter,
+    // test() {
+    //   this.$emit('test2', 'VALUE2')
+    // }
   }
 }
 </script>

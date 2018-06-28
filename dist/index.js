@@ -84,7 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 var bind = __webpack_require__(9);
-var isBuffer = __webpack_require__(36);
+var isBuffer = __webpack_require__(39);
 
 /*global toString:true*/
 
@@ -607,7 +607,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(40)))
 
 /***/ }),
 /* 4 */
@@ -995,13 +995,13 @@ module.exports = function bind(fn, thisArg) {
 
 
 /* styles */
-__webpack_require__(35)
+__webpack_require__(36)
 
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(33),
   /* template */
-  __webpack_require__(43),
+  __webpack_require__(46),
   /* scopeId */
   null,
   /* cssModules */
@@ -1923,6 +1923,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1965,8 +1976,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__i18n_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tools_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__cal_event_item_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2196,9 +2216,9 @@ var inBrowser = typeof window !== 'undefined';
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tools_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_cal_events_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_cal_panel_vue__);
 //
 //
@@ -2459,6 +2479,24 @@ if (( false ? 'undefined' : _typeof(module)) === 'object' && module.exports) {
 /* 36 */
 /***/ (function(module, exports) {
 
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "clock.svg?8e6905d09a02cc07265c453abe4b2d65";
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "trash.svg?4d77a531079e3a2d4ccc34623a6b24ef";
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports) {
+
 /*!
  * Determine if an object is a Buffer
  *
@@ -2483,7 +2521,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 37 */
+/* 40 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -2673,16 +2711,20 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 38 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(35)
 
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(30),
   /* template */
-  __webpack_require__(41),
+  __webpack_require__(44),
   /* scopeId */
-  null,
+  "data-v-1bef712c",
   /* cssModules */
   null
 )
@@ -2691,14 +2733,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 39 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(31),
   /* template */
-  __webpack_require__(42),
+  __webpack_require__(45),
   /* scopeId */
   null,
   /* cssModules */
@@ -2709,14 +2751,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 40 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(2)(
   /* script */
   __webpack_require__(32),
   /* template */
-  __webpack_require__(44),
+  __webpack_require__(47),
   /* scopeId */
   null,
   /* cssModules */
@@ -2727,41 +2769,67 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports) {
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "wrapper"
+  }, [_c('div', {
+    staticStyle: {
+      "flex": "4"
+    }
   }, [_c('h3', {
     staticClass: "title"
-  }, [_vm._v(_vm._s(_vm.index + 1) + ". " + _vm._s(_vm.event.title))]), _vm._v(" "), _c('p', {
-    staticClass: "time"
-  }, [_vm._v(_vm._s(_vm.dateTimeFormatter(Date.parse(new Date(_vm.event.date)), _vm.i18n[_vm.locale].fullFormat)))]), _vm._v(" "), _c('p', {
-    staticClass: "desc"
-  }, [_vm._v(_vm._s(_vm.event.desc))]), _vm._v(" "), (_vm.event.time != null) ? _c('h2', [_vm._v(_vm._s(_vm.event.time))]) : _vm._e(), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.event.project))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.event.place))]), _vm._v(" "), _c('button', {
+  }, [_vm._v(_vm._s(_vm.event.title))]), _vm._v(" "), _c('p', {
+    staticClass: "project"
+  }, [_vm._v("Lótus")]), _vm._v(" "), _c('p', {
+    staticClass: "place"
+  }, [_vm._v("Sala X")])]), _vm._v(" "), _c('div', {
+    staticClass: "test"
+  }, [_c('div', {
+    staticClass: "icons"
+  }, [_c('img', {
     attrs: {
-      "type": "button"
+      "src": __webpack_require__(38),
+      "id": "trash"
     },
     on: {
       "click": function($event) {
         _vm.sendInfoToDelete()
       }
     }
-  }, [_vm._v("DELETE")])])
-},staticRenderFns: []}
+  })]), _vm._v(" "), _vm._m(0)])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "time-wrapper"
+  }, [_c('img', {
+    attrs: {
+      "src": __webpack_require__(37),
+      "id": "clock"
+    }
+  }), _vm._v(" "), _c('h2', {
+    staticClass: "time"
+  }, [_vm._v("18:30")])])
+}]}
 
 /***/ }),
-/* 42 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "events-wrapper",
-    style: (_vm.bgColor)
-  }, [_c('h2', {
-    staticClass: "date"
-  }, [_vm._v("\n    " + _vm._s(_vm.dayEventsTitle) + "\n  ")]), _vm._v(" "), _c('div', {
+    staticClass: "events-wrapper"
+  }, [_c('div', {
+    staticClass: "events-header"
+  }, [_vm._m(0), _vm._v(" "), _c('div', [_c('button', {
+    staticClass: "events-header-button",
+    on: {
+      "click": function($event) {
+        _vm.test()
+      }
+    }
+  }, [_vm._v("Criar evento")])])]), _vm._v(" "), _c('div', {
     staticClass: "cal-events"
   }, [_vm._t("default", _vm._l((_vm.events), function(event, index) {
     return _c('div', {
@@ -2779,10 +2847,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     })], 1)
   }))], 2)])
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('h2', {
+    staticClass: "events-header-title"
+  }, [_vm._v("Eventos do dia")]), _vm._v(" "), _c('p', {
+    staticClass: "events-header-date"
+  }, [_vm._v("15/07")])])
+}]}
 
 /***/ }),
-/* 43 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2811,7 +2885,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

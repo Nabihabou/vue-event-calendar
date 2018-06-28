@@ -1,8 +1,17 @@
 <template>
-  <div class="events-wrapper" :style="bgColor">
-    <h2 class="date">
+  <div class="events-wrapper">
+    <div class="events-header">
+      <div>
+        <h2 class="events-header-title">Eventos do dia</h2>
+        <p class="events-header-date">15/07</p>
+      </div>
+      <div>
+        <button @click="test()" class="events-header-button">Criar evento</button>
+      </div>
+    </div>
+    <!-- <h2 class="date">
       {{dayEventsTitle}}
-    </h2>
+    </h2> -->
     <div class="cal-events">
       <slot>
         <div v-for="(event, index) in events" class="event-item">

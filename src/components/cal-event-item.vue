@@ -1,12 +1,23 @@
 <template>
   <div class="wrapper">
-    <h3 class="title">{{index+1}}. {{event.title}}</h3>
-    <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p>
-    <p class="desc">{{event.desc}}</p>
-    <h2 v-if="event.time != null">{{event.time}}</h2>
-    <p>{{event.project}}</p>
-    <p>{{event.place}}</p>
-    <button type="button" @click="sendInfoToDelete()">DELETE</button>
+    <div style="flex: 4;">
+      <h3 class="title">{{event.title}}</h3>
+      <p class="project">Lótus</p>
+      <p class="place">Sala X</p>    
+    </div>
+    <!-- <p class="desc">{{event.desc}}</p> -->
+    <!-- <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p> -->
+    <div class="test">
+      <div class="icons">
+        <!-- <img src="../../assets/img/edit.svg" id="edit" /> -->
+        <img src="../../assets/img/trash.svg" id="trash" @click="sendInfoToDelete()" />
+      </div>
+      <!-- <button type="button" @click="sendInfoToDelete()">DELETE</button> -->
+      <div class="time-wrapper">
+        <img src="../../assets/img/clock.svg" id="clock"/>
+        <h2 class="time">18:30</h2>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -42,3 +53,26 @@ export default {
   },
 }
 </script>
+
+<style lang="less" scoped>
+.test {
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+}
+
+.icons img#edit {
+  margin-right: 8px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.time-wrapper {
+  display: flex;
+}
+</style>

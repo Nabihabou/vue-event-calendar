@@ -6,7 +6,7 @@
         <p class="events-header-date">15/07</p>
       </div>
       <div>
-        <button @click="goTo()" class="events-header-button">Criar evento</button>
+        <button @click="goTo()" type="button" class="events-header-button">Criar evento</button>
       </div>
     </div>
     <!-- <h2 class="date">
@@ -15,7 +15,7 @@
     <div class="cal-events">
       <slot>
         <div v-for="(event, index) in events" class="event-item">
-          <cal-event-item @test="test()" :event="event" :index="index" :locale="locale"></cal-event-item>
+          <cal-event-item :event="event" :index="index" :locale="locale"></cal-event-item>
         </div>
       </slot>
     </div>

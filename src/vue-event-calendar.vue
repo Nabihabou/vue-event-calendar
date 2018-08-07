@@ -160,7 +160,7 @@ export default {
     max-width: 1200px;
     margin: 0 auto;
     .cal-wrapper{
-      width: 50%;
+      width: 40%;
       padding: 20px 20px;
       background-color: @white;
       border: 1px solid @border-color;
@@ -174,7 +174,7 @@ export default {
       background-color: @white;
       color: @text-color;
       position: absolute;
-      left: 50%;
+      left: 40%;
       top: 0;
       bottom: 0;
       border-top: 1px solid @border-color;
@@ -260,7 +260,6 @@ export default {
       // box-shadow: 0 6px 5px rgba(0,0,0,.1);
       font-weight: 500;
       overflow: hidden;
-      padding-bottom: 10px;
       &>div{
         float: left;
         line-height: 20px;
@@ -287,6 +286,7 @@ export default {
     }
     .cal-body{
       width: 100%;
+      background-color: #fff;
       .weeks{
         width: 100%;
         overflow: hidden;

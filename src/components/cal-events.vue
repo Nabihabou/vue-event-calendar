@@ -79,6 +79,9 @@ export default {
     // test() {
     //   this.$emit('test2', 'VALUE2')
     // }
+    test() {
+      this.$emit('go-to', '/')
+    }
   }
 }
 </script>

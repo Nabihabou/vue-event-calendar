@@ -6,7 +6,7 @@
         <p class="events-header-date">15/07</p>
       </div>
       <div>
-        <button @click="test()" class="events-header-button">Criar evento</button>
+        <button @click="goTo()" class="events-header-button">Criar evento</button>
       </div>
     </div>
     <!-- <h2 class="date">
@@ -76,10 +76,7 @@ export default {
   },
   methods: {
     dateTimeFormatter,
-    // test() {
-    //   this.$emit('test2', 'VALUE2')
-    // }
-    test() {
+    goTo() {
       this.$emit('go-to', '/')
     }
   }

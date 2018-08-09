@@ -79,7 +79,7 @@ export default {
     dateTimeFormatter,
     goTo() {
       // this.$emit('go-to', '/')
-      this.$event.fire('go-to')
+      this.$events.fire('go-to')
     }
   }
 }

@@ -2,8 +2,8 @@
   <div class="wrapper">
     <div style="flex: 4;">
       <h3 class="title">{{event.title}}</h3>
-      <p class="project">Lótus</p>
-      <p class="place">Sala X</p>    
+      <p class="project">{{event.projectName}}s</p>
+      <p class="place">{{event.place}}</p>    
     </div>
     <!-- <p class="desc">{{event.desc}}</p> -->
     <!-- <p class="time">{{dateTimeFormatter(Date.parse(new Date(event.date)),i18n[locale].fullFormat)}}</p> -->
@@ -15,7 +15,7 @@
       <!-- <button type="button" @click="sendInfoToDelete()">DELETE</button> -->
       <div class="time-wrapper">
         <img src="../../assets/img/clock.svg" id="clock"/>
-        <h2 class="time">18:30</h2>
+        <h2 class="time">{{event.startsAt}}</h2>
       </div>
     </div>
   </div>

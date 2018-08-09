@@ -2808,7 +2808,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('h2', {
     staticClass: "time"
-  }, [_vm._v(_vm._s(_vm.event.startsAt))])])])])
+  }, [_vm._v(_vm._s(_vm.event.time))])])])])
 },staticRenderFns: []}
 
 /***/ }),

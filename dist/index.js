@@ -2056,10 +2056,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
   methods: {
-    dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */]
-    // test() {
-    //   this.$emit('test2', 'VALUE2')
-    // }
+    dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */],
+    goTo: function goTo() {
+      this.$emit('go-to', '/');
+    }
   }
 });
 
@@ -2824,9 +2824,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "events-header"
   }, [_vm._m(0), _vm._v(" "), _c('div', [_c('button', {
     staticClass: "events-header-button",
+    attrs: {
+      "type": "button"
+    },
     on: {
       "click": function($event) {
-        _vm.test()
+        _vm.goTo()
       }
     }
   }, [_vm._v("Criar evento")])])]), _vm._v(" "), _c('div', {
@@ -2839,11 +2842,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "event": event,
         "index": index,
         "locale": _vm.locale
-      },
-      on: {
-        "test": function($event) {
-          _vm.test()
-        }
       }
     })], 1)
   }))], 2)])

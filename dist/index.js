@@ -2783,9 +2783,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "title"
   }, [_vm._v(_vm._s(_vm.event.title))]), _vm._v(" "), _c('p', {
     staticClass: "project"
-  }, [_vm._v("Lótus")]), _vm._v(" "), _c('p', {
+  }, [_vm._v(_vm._s(_vm.event.projectName) + "s")]), _vm._v(" "), _c('p', {
     staticClass: "place"
-  }, [_vm._v("Sala X")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.event.place))])]), _vm._v(" "), _c('div', {
     staticClass: "test"
   }, [_c('div', {
     staticClass: "icons"
@@ -2799,9 +2799,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.sendInfoToDelete()
       }
     }
-  })]), _vm._v(" "), _vm._m(0)])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  })]), _vm._v(" "), _c('div', {
     staticClass: "time-wrapper"
   }, [_c('img', {
     attrs: {
@@ -2810,8 +2808,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }), _vm._v(" "), _c('h2', {
     staticClass: "time"
-  }, [_vm._v("18:30")])])
-}]}
+  }, [_vm._v(_vm._s(_vm.event.startsAt))])])])])
+},staticRenderFns: []}
 
 /***/ }),
 /* 45 */

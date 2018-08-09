@@ -2006,6 +2006,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cal-events',
   data: function data() {
@@ -2058,7 +2059,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */],
     goTo: function goTo() {
-      this.$emit('go-to', '/');
+      // this.$emit('go-to', '/')
+      this.$event.fire('go-to');
     }
   }
 });

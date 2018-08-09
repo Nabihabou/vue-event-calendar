@@ -80,6 +80,7 @@ function install (Vue, options = {}) {
   Vue.component('vue-event-calendar', vueEventCalendar)
 
   Vue.prototype.$EventCalendar = Calendar
+
 }
 
 export default install

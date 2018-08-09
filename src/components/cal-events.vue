@@ -26,6 +26,7 @@
 import i18n from '../i18n.js'
 import { dateTimeFormatter } from '../tools.js'
 import calEventItem from './cal-event-item.vue'
+
 export default {
   name: 'cal-events',
   data () {
@@ -77,7 +78,8 @@ export default {
   methods: {
     dateTimeFormatter,
     goTo() {
-      this.$emit('go-to', '/')
+      // this.$emit('go-to', '/')
+      this.$event.fire('go-to')
     }
   }
 }

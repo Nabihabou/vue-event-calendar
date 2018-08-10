@@ -10,7 +10,7 @@
     <div class="test">
       <div class="icons">
         <!-- <img src="../../assets/img/edit.svg" id="edit" /> -->
-        <img src="../../assets/img/trash.svg" id="trash" @click="sendInfoToDelete()" />
+        <img src="assets/img/trash.svg" id="trash" @click="sendInfoToDelete()" />
       </div>
       <!-- <button type="button" @click="sendInfoToDelete()">DELETE</button> -->
       <div class="time-wrapper">

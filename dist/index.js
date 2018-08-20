@@ -2776,7 +2776,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "title"
   }, [_vm._v(_vm._s(_vm.event.title))]), _vm._v(" "), _c('p', {
     staticClass: "project"
-  }, [_vm._v(_vm._s(_vm.event.projectName) + "s")]), _vm._v(" "), _c('p', {
+  }, [_vm._v(_vm._s(_vm.event.projectName))]), _vm._v(" "), _c('p', {
     staticClass: "place"
   }, [_vm._v(_vm._s(_vm.event.place))])]), _vm._v(" "), _c('div', {
     staticClass: "test"

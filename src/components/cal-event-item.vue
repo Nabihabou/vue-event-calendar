@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div style="flex: 4;">
       <h3 class="title">{{event.title}}</h3>
-      <p class="project">{{event.projectName}}s</p>
+      <p class="project">{{event.projectName}}</p>
       <p class="place">{{event.place}}</p>    
     </div>
     <!-- <p class="desc">{{event.desc}}</p> -->

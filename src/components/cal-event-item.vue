@@ -48,7 +48,9 @@ export default {
   methods: {
     dateTimeFormatter,
     sendInfoToDelete() {
-      this.$events.fire('delete-event', this.event)
+      if(confirm("Excluir evento?")){
+        this.$events.fire('delete-event', this.event)
+      }
     },
   },
 }

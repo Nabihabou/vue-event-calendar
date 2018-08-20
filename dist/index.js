@@ -1963,7 +1963,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     dateTimeFormatter: __WEBPACK_IMPORTED_MODULE_1__tools_js__["b" /* dateTimeFormatter */],
     sendInfoToDelete: function sendInfoToDelete() {
-      this.$events.fire('delete-event', this.event);
+      if (confirm("Excluir evento?")) {
+        this.$events.fire('delete-event', this.event);
+      }
     }
   }
 });

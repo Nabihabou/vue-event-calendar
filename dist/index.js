@@ -2786,6 +2786,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "icons"
   }, [_c('img', {
+    staticStyle: {
+      "width": "20px",
+      "height": "20px"
+    },
     attrs: {
       "src": "static/img/trash2.png",
       "id": "trash"

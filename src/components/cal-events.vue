@@ -2,8 +2,8 @@
   <div class="events-wrapper">
     <div class="events-header">
       <div>
-        <h2 class="events-header-title">Eventos do dia</h2>
-        <p class="events-header-date">15/07</p>
+        <h2 class="events-header-title">Eventos</h2>
+        <!-- <p class="events-header-date">15/07</p> -->
       </div>
       <div>
         <button @click="goTo()" type="button" class="events-header-button">Criar evento</button>

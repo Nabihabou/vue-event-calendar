@@ -2004,6 +2004,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -2828,7 +2829,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Criar evento")])])]), _vm._v(" "), _c('div', {
     staticClass: "cal-events"
-  }, [_vm._t("default", _vm._l((_vm.events), function(event, index) {
+  }, [_vm._t("default", [_vm._l((_vm.events), function(event, index) {
     return _c('div', {
       staticClass: "event-item"
     }, [_c('cal-event-item', {
@@ -2838,7 +2839,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "locale": _vm.locale
       }
     })], 1)
-  }))], 2)])
+  }), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "height": "450px",
+      "visibility": "hidden"
+    }
+  }, [_vm._v(".")])])], 2)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('h2', {
     staticClass: "events-header-title"

@@ -2787,7 +2787,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "icons"
   }, [_c('img', {
     attrs: {
-      "src": "assets/img/trash2.png",
+      "src": "static/img/trash2.png",
       "id": "trash"
     },
     on: {

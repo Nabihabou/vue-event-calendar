@@ -14,7 +14,7 @@
       </div>
       <!-- <button type="button" @click="sendInfoToDelete()">DELETE</button> -->
       <div class="time-wrapper">
-        <img src="../../assets/img/clock.svg" id="clock"/>
+        <img src="static/img/clock.svg" id="clock"/>
         <h2 class="time">{{event.time}}</h2>
       </div>
     </div>

@@ -17,7 +17,7 @@
         <div v-for="(event, index) in events" class="event-item">
           <cal-event-item :event="event" :index="index" :locale="locale"></cal-event-item>
         </div>
-        <div style="height: 450px; visibility: hidden;">.</div>
+        <div style="height: 100px; visibility: hidden;">.</div>
       </slot>
     </div>
   </div>
